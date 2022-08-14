@@ -297,13 +297,13 @@ const checkWorkAlertsAndNotifyIfBecomesLow = () => {
 // Every 2 hours 0 */2 * * *
 
 // Checking live Location for alerts
-// schedule.scheduleJob("*/5 * * * * *", checkUpdateForLiveLocation());
+schedule.scheduleJob("0 * * * *", checkUpdateForLiveLocation());
 
 // // Checking work location for alerts
-// schedule.scheduleJob("*/5 * * * * *", checkUpdateForWorkLocation());
+schedule.scheduleJob("0 * * * *", checkUpdateForWorkLocation());
 
 // // Checking Live location sent alerts for becoming low
-// schedule.scheduleJob("*/5 * * * * *", checkAlertsAndNotifyIfBecomesLow());
+schedule.scheduleJob("0 * * * *", checkAlertsAndNotifyIfBecomesLow());
 
 // // Checking Work location sent alerts for becoming low
-// schedule.scheduleJob("*/5 * * * * *", checkWorkAlertsAndNotifyIfBecomesLow());
+schedule.scheduleJob("0 * * * *", checkWorkAlertsAndNotifyIfBecomesLow());
