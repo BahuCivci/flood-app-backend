@@ -292,18 +292,19 @@ const checkWorkAlertsAndNotifyIfBecomesLow = () => {
   };
 };
 
+// Every minute * * * * *
 // Every hour 0 * * * *
 // Every 3 hours 0 */3 * * *
 // Every 2 hours 0 */2 * * *
 
 // Checking live Location for alerts
-schedule.scheduleJob("0 * * * *", checkUpdateForLiveLocation());
+schedule.scheduleJob("* * * * *", checkUpdateForLiveLocation());
 
 // // Checking work location for alerts
-schedule.scheduleJob("0 * * * *", checkUpdateForWorkLocation());
+schedule.scheduleJob("* * * * *", checkUpdateForWorkLocation());
 
 // // Checking Live location sent alerts for becoming low
-schedule.scheduleJob("0 * * * *", checkAlertsAndNotifyIfBecomesLow());
+schedule.scheduleJob("* * * * *", checkAlertsAndNotifyIfBecomesLow());
 
 // // Checking Work location sent alerts for becoming low
-schedule.scheduleJob("0 * * * *", checkWorkAlertsAndNotifyIfBecomesLow());
+schedule.scheduleJob("* * * * *", checkWorkAlertsAndNotifyIfBecomesLow());
