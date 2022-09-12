@@ -110,7 +110,7 @@ const notificationEmailFormat = (name, title, content, url) => {
               color: #000000;
               font-family: sans-serif;" class="header">
                 <h4 style="margin: 0;">From Flood App Management</h4>
-                <p>Nabia_Developer</p>
+                <p>Bahu_Civci</p>
               </td>
             </tr>
             <tr>
